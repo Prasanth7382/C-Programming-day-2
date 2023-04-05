@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int arr[11];
+    int i;
+
+    // Initialize array with elements in the range of 0 to 30
+    for (i = 0; i < 11; i++) {
+        arr[i] = i * 3;
+    }
+
+    // Print elements in ascending order
+    printf("Elements in ascending order:\n");
+    for (i = 0; i < 11; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // Print elements in descending order
+    printf("Elements in descending order:\n");
+    for (i = 10; i >= 0; i--) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
